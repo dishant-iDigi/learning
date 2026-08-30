@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>CSS Positioning Exercise</title>
+  <style>
+    /* Write your code here */
+    
+
+    .blue-box {
+      background-color: blue;
+      height: 300px;
+      width: 500px;
+      position: relative;
+      top:200px;
+      left: 200px;
+    }
+
+    .red-circle {
+      background-color: red;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      position: absolute;
+      top:150px;
+      left: 250px;
+      z-index: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+  <h3>Different type of positioning </h3>
+  <h4>To move each of them use [ top, left, right] </h4>
+  1 static = also the default <br>
+  2 relative = position relative to default position <br>
+  3 absolute = position relative to nearest positioned ancestor<br>
+  or top left corner of web page
+  <br>
+  Z-index positioning which element will come over other one in z axis
+  <br>
+  4 fixed positioning - moves with the web page or you scroll down
+
+  </p>
+
+  <div class="blue-box">
+    <div class="red-circle">
+    </div>
+  </div>
+
+</body>
+
+</html>

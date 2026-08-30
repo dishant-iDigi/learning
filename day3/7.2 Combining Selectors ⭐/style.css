@@ -1,0 +1,34 @@
+/* Write your code here: */
+h1,
+h2 {
+    color: blueviolet;
+}
+
+/* CHILD SELECTOR -> APPLY TO DIRECT CHILD OF THE LEFT SIDE 
+HERE IT IS BOX AND THE DONE IS THE DIRECT CHILD HERE */
+.box>.done {
+    color: firebrick;
+}
+
+/* REVISE YOU GOT WRONG HERE */
+/* descendent selector - recommended for parent child reln */
+.box li {
+    color: blue;
+}
+
+
+/* chainselector */
+li.done {
+    color: seagreen;
+}
+
+/* COMBINING COMBINER'S */
+/* ul p.done{
+    font-size: 0.5rem;
+    } */
+
+/* or by using child selector  */
+ul>p {
+    font-size: 0.5rem;
+
+}
