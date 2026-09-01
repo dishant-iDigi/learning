@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Flexbox Pricing Table</title>
+  <title>Flexbox Pricing cards</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
@@ -14,11 +14,11 @@
 
     /* Hint: What can you do with a media query and flexbox? */
     .pricing-container {
+      gap: 2rem;
+      height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
-      gap: 2rem;
     }
 
     .pricing-plan {
@@ -46,10 +46,11 @@
       list-style: none;
       margin-bottom: 20px;
     }
-      
+
     .plan-features {
       padding: 0px;
-      margin: 0px;/*<--- This removes the default top/bottom spacing[important] */
+      margin: 0px;
+      /*<--- This removes the default top/bottom spacing[important] */
     }
 
     button {
