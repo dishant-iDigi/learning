@@ -139,7 +139,7 @@ button {
 }
 button:hover{
    background-color: #ffb185;
-   color: rgba(255, 255, 255, 0.556);
+   color: white;
 }
 #love {
     width: 40%;
