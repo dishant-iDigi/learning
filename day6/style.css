@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    box-sizing: border-box;
+
+}
+
+.top-container {
+    background-color: #DEB096;
+    position: relative;
+    /* Height removed so container wraps around title and mountain automatically */
+}
+
+.top-cloud img {
+    position: absolute;
+    height: 140px;
+    right: 15%;
+    top: 30px;
+}
+
+/* Changed from position: absolute to normal flow */
+.title-text {
+    padding-top: 100px;
+    width: 100%;
+}
+
+h1 {
+    color: brown;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: "Sacramento", cursive;
+}
+
+h2 {
+    color: brown;
+    font-size: 2.5rem;
+    margin: 30px 0px;
+    padding-bottom: 10px;
+}
+
+h3 {
+  
+    color: brown;
+    font-size: 1.17em;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    margin: 30px 0px;
+}
+
+.pro {
+    text-decoration: underline;
+}
+
+.bottom-cloud img {
+    height: 140px;
+    position: absolute;
+    top: 250px;
+    left: 10%;
+}
+
+/* Normal flow mountain sits at the bottom */
+.mountain img {
+    height: 400px;
+    margin-top: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.middle-container {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.pfp img {
+    height: 150px;
+    border-radius: 50%;
+}
+
+.helo h2 {
+    margin: 30px 0px;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+
+}
+
+p {
+
+    font-family: "Merriweather";
+    font-style: italic;
+    font-weight: 300;
+    line-height: 2;
+}
+
+hr {
+    width: 4%;
+    margin: 100px auto;
+    border-bottom: none;
+    border-top: dotted rgb(196, 189, 189) 6px;
+
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 50%;
+    margin-left: 20%;
+    gap: 2rem;
+}
+
+.typing img {
+    height: 200px;
+}
+
+.hw img {
+    height: 150px;
+}
+
+.design {
+    text-align: start;
+}
+
+button {
+    margin: 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #DEB096;
+    color: brown;
+    font-weight: 500;
+    padding:10px 20px;
+}
+button:hover{
+   background-color: #ffb185;
+   color: rgba(255, 255, 255, 0.556);
+}
+#love {
+    width: 40%;
+    margin: 40px auto 60px auto;
+}
+.footer-link{
+    text-decoration: none;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    margin: 20px 10px;
+    color: brown;
+}
+.footer-link:hover{
+    color: white;
+}
+
+.copyright{
+    color: brown;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px 10px;
+    margin: 10px 10px;
+}
+
+.bottom-container{
+    background-color: #DEB096;
+    padding: 50px ;
+}
