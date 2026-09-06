@@ -74,7 +74,7 @@ body {
     /* Allows background to stretch if content expands */
     height: auto;
     /* Prevents text from overflowing */
-    background-color: #20908B ;
+    background-color: #20908B;
 }
 
 #ourlatest {
@@ -143,6 +143,7 @@ body {
 
 .freepik {
     color: #f1c50e !important;
+    margin-left: 5px;
     text-decoration: none;
 }
 
@@ -175,9 +176,6 @@ body {
 }
 
 /* seciton 4 */
-
-
-
 
 /* Container that masks the zoom inside its borders */
 .img-frame {
@@ -232,27 +230,72 @@ body {
 
 
 /* section 5 */
-.sec5div{
+.sec5div {
     background-color: #FDF0E7;
 }
 
-.imgfree{
+.imgfree {
     display: flex;
     justify-content: center;
+ 
 }
 
-.card{
+.card {
     border: none;
-    min-height: 300px;
-    border-radius: 20px;
-overflow: hidden; /* Clips the images to the rounded corners */
-}
-.orange-card{
-   background-color: #EE701C;
-
-}
-.card img{
-   height: 100%;
-    object-fit: contain;
+    height: 300px;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 8px 0 rgb(200, 197, 197);
+    overflow: hidden;
 }
 
+.orange-card {
+    color: white    ;
+    background-color: #EE701C;
+
+}
+.card h3{
+    font-size: 20px;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.card button{
+    min-height: 55px;
+    width: 160px;
+    font-weight: 700;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: #20908B;
+}
+
+.card button:hover{
+    color: black;
+    background-color: #f8c74b;
+}
+
+/* ending  */
+
+.pic1{  
+    position: relative;
+}
+.pic1 img{
+    max-width: 500px;
+    min-height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.icon{
+    background-color:#EE701C;
+    border-radius: 50%;
+    max-width: 150px;
+    padding: 12px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
