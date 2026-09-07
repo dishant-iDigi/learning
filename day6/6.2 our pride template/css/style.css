@@ -14,11 +14,24 @@ body {
     background-color: #f8f9fa;
 }
 
+/* Custom Offcanvas Width */
+#mobileOffcanvas {
+    --bs-offcanvas-width: 220px;
+    /* Default Bootstrap width is 400px */
+}
+
+@media(min-width:576px) {
+    #mobileOffcanvas {
+        --bs-offcanvas-width: 280px;
+    }
+}
+
 @media (min-width: 992px) {
     .nav-link {
         color: #000000;
         /* Pure black links on desktop navbar */
     }
+
 }
 
 .nav-link:hover {
