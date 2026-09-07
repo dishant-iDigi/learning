@@ -237,7 +237,7 @@ body {
 .imgfree {
     display: flex;
     justify-content: center;
- 
+
 }
 
 .card {
@@ -249,11 +249,12 @@ body {
 }
 
 .orange-card {
-    color: white    ;
+    color: white;
     background-color: #EE701C;
 
 }
-.card h3{
+
+.card h3 {
     font-size: 20px;
     font-family: 'Ubuntu';
     font-weight: bold;
@@ -264,7 +265,8 @@ body {
     width: 100%;
     object-fit: cover;
 }
-.card button{
+
+.card button {
     min-height: 55px;
     width: 160px;
     font-weight: 700;
@@ -274,28 +276,138 @@ body {
     background-color: #20908B;
 }
 
-.card button:hover{
+.card button:hover {
     color: black;
     background-color: #f8c74b;
 }
 
-/* ending  */
+/* ending pics */
 
-.pic1{  
+.pic1 {
     position: relative;
 }
-.pic1 img{
-    max-width: 500px;
-    min-height: 500px;
+
+.pic1 img {
+    max-width: 240px;
+    min-height: 240px;
     border-radius: 50%;
     object-fit: cover;
 }
-.icon{
-    background-color:#EE701C;
+
+.icon {
+    background-color: #EE701C;
     border-radius: 50%;
-    max-width: 150px;
+    width: 60px;
     padding: 12px;
     position: absolute;
     top: 20px;
     right: 20px;
+}
+
+@media(min-width:540px) {
+
+    .pic1 img {
+        max-width: 490px;
+        min-height: 490px;
+
+    }
+
+    .icon {
+        width: 100px;
+    }
+}
+
+@media(min-width:960px) {
+
+    .pic1 img {
+        max-width: 540px;
+        min-height: 540px;
+
+    }
+
+    .icon {
+        width: 120px;
+    }
+}
+
+/* ////ending  form ///// */
+
+.form-part1 {
+    display: flex;
+    gap: 2rem;
+}
+
+.p1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.form-part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form label {
+    font-weight: 500;
+    margin-top: 26px;
+
+}
+
+.form button {
+    border: none;
+    border-radius: 0.5rem;
+    height: 50px;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+    background-color: #20908B;
+    margin: 26px 0px;
+}
+
+.form button:hover {
+    background-color: #EE701C;
+}
+
+
+.boxes {
+    padding: 10px 10px;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #F2F2F2;
+    height: 45px;
+    width: 100%;
+}
+
+.txtarea {
+    padding: 10px 10px;
+    border-radius: 0.3rem;
+    border: none;
+    background-color: #F2F2F2;
+    height: 140px;
+    width: 100%;
+
+}
+
+.freepikend {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+/* footer   */
+footer {
+    padding: 40px 10px;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    font-size: 14px;
+    padding-bottom: 30px;
+    color: white;
+
 }
