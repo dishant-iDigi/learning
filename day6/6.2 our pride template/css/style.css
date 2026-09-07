@@ -8,15 +8,17 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-.nav-list li {
-    list-style: none;
+/* Navigation Bar Height Container */
+.navgation-bar {
+    height: 80px;
+    background-color: #f8f9fa;
 }
 
-.nav-link {
-    /* color: white !important; */
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 26px;
-
+@media (min-width: 992px) {
+    .nav-link {
+        color: #000000;
+        /* Pure black links on desktop navbar */
+    }
 }
 
 .nav-link:hover {
@@ -25,55 +27,15 @@ body {
 
 .nav-link.active {
     color: #20908B !important;
-    background-color: transparent !important;
 }
 
-
-
-@media(min-width:992px) {
-    .nav-link {
-        color: black !important;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .nav-link:hover {
-        color: #EE701C;
-    }
-
-    .nav-link.active {
-        color: #20908B !important;
-        background-color: transparent !important;
-    }
-
-    .div-ofnav {
-        height: 0px;
-        background-color: transparent;
-        padding-top: 50px;
-        padding-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .nav-list {
-        display: flex;
-        flex-direction: row;
-        padding: 20px 0px;
-        gap: 2rem;
-    }
-
-}
-
+/* //////////////////////// */
 /* section 1 */
 
-/* Change height: 400px; to min-height: 400px; */
 .sec1div {
     min-height: 400px;
     /* Allows background to stretch if content expands */
     height: auto;
-    /* Prevents text from overflowing */
     background-color: #20908B;
 }
 
@@ -106,7 +68,6 @@ body {
 .sec-2 {
     min-height: 400px;
     height: auto;
-
     background-color: #FDF0E7;
 }
 
@@ -332,6 +293,7 @@ body {
 
 /* ////ending  form ///// */
 
+
 .form-part1 {
     display: flex;
     gap: 2rem;
@@ -345,6 +307,7 @@ body {
 }
 
 .form-part2 {
+
     display: flex;
     flex-direction: column;
     gap: 5px;
