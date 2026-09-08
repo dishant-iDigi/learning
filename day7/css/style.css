@@ -94,10 +94,62 @@ span i {
 
 /* =========== NAV SECTION ============== */
 
+.navbar-brand{
+    font-size: 18px;
+    margin: 0px 0px 0px -15px;
+    padding: 15px;
+    font-weight: 500;
+    color: #393939;
+}
 
 
+.nav-link{
+    font-size: 12px;
+    padding: 15px !important;
+    font-weight: 500;
+    color: #555555 ;
+}
+.nav-link.active{
+    color: #393939 !important;
+}
+.btn-appointment{
+    max-width: 175px;
+    background-color: #A5C422;
+    color: #FFFFFF;
+    border-radius: 3px;
+    padding: 12px 15px !important;
+}
+.btn-appointment:hover{
+    
+    background-color: #015CA7;
+    color: #FFFFFF;
+
+}
 
 
+/* --------------------------------------------------------------------------
+   SIMPLE CONTRACT / EXPAND EFFECT ON SCREEN RESIZE took help of ai for this part...
+   -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    .navgation-bar .nav-link {
+        /* Links smoothly expand padding based on window width */
+        padding-left: 1vw !important;
+        padding-right: 1vw !important;
+        
+        /* Smooth contraction and expansion transition */
+        transition: padding 0.4s ease, font-size 0.4s ease !important;
+    }
+
+    /* Make the appointment button shrink/grow smoothly too */
+    .navgation-bar .btn-appointment {
+   
+        transition: padding 0.4s ease !important;
+    }
+}
+
+/* --------------------------------------------------------------------------
+        END OF  SIMPLE CONTRACT / EXPAND EFFECT 
+   -------------------------------------------------------------------------- */
 
 
 /* =========== END OF NAV  ============== */
