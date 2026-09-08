@@ -90,11 +90,12 @@ span i {
         padding: 11px 19px;
     }
 }
+
 /* =========== END OF HEADER ============ */
 
 /* =========== NAV SECTION ============== */
 
-.navbar-brand{
+.navbar-brand {
     font-size: 18px;
     margin: 0px 0px 0px -15px;
     padding: 15px;
@@ -103,24 +104,27 @@ span i {
 }
 
 
-.nav-link{
+.nav-link {
     font-size: 12px;
     padding: 15px !important;
     font-weight: 500;
-    color: #555555 ;
+    color: #555555;
 }
-.nav-link.active{
+
+.nav-link.active {
     color: #393939 !important;
 }
-.btn-appointment{
+
+.btn-appointment {
     max-width: 175px;
     background-color: #A5C422;
     color: #FFFFFF;
     border-radius: 3px;
     padding: 12px 15px !important;
 }
-.btn-appointment:hover{
-    
+
+.btn-appointment:hover {
+
     background-color: #015CA7;
     color: #FFFFFF;
 
@@ -135,14 +139,14 @@ span i {
         /* Links smoothly expand padding based on window width */
         padding-left: 1vw !important;
         padding-right: 1vw !important;
-        
+
         /* Smooth contraction and expansion transition */
         transition: padding 0.4s ease, font-size 0.4s ease !important;
     }
 
     /* Make the appointment button shrink/grow smoothly too */
     .navgation-bar .btn-appointment {
-   
+
         transition: padding 0.4s ease !important;
     }
 }
@@ -150,6 +154,105 @@ span i {
 /* --------------------------------------------------------------------------
         END OF  SIMPLE CONTRACT / EXPAND EFFECT 
    -------------------------------------------------------------------------- */
-
-
 /* =========== END OF NAV  ============== */
+
+
+/* ============= SECTION 1 ================== */
+
+
+.carousel-item {
+    height: 630px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item h1 {
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.carousel-item h3 {
+    font-size: 14px;
+
+
+}
+
+.btn1 {
+    background-color: #A5C422;
+}
+
+.btn2 {
+    background-color: #393939;
+
+}
+
+.btn3 {
+    background-color: #4267B2;
+}
+
+.btnofsec1 {
+    border-radius: 3px;
+    padding: 14px 20px;
+    color: white;
+    font-size: 14px;
+    text-decoration: none;
+
+}
+
+.carousel-caption {
+    margin-bottom: 170px;
+}
+
+
+/* =========section end========= */
+
+/* ============== section about ============= */
+
+#about {
+    background: url(../images/about-bg.jpg);
+    background-size: cover;
+}
+
+.about-info {
+    padding: 150px 10px;
+}
+
+.about-info h2 {
+    font-size: 42px;
+    font-weight: 600;
+    margin: 20px 0px 10px;
+    padding: 0px 0px 10px;
+}
+
+.about-info h3 {
+    font-size: 21px;
+    font-weight: 600;
+    color: #333333;
+    margin: 0px;
+}
+
+.about-info p {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 0px 0px 10px;
+    color: #757575;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin: 0px;
+
+}
+
+.profile img {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    margin: 14px 14px 0px 0px;
+}
