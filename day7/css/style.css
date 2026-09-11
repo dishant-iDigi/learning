@@ -162,7 +162,21 @@ span i {
 
 .carousel-item {
     height: 630px;
+    position: relative;
+
 }
+
+.carousel-item::before {
+    content: "";
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 .carousel-item img {
     width: 100%;
@@ -275,7 +289,6 @@ span i {
 
 .card {
     border: none;
-    max-width: 380px;
     /* top-left: 0, top-right: 0, bottom-right: 15px, bottom-left: 15px */
     border-radius: 0 0 15px 15px !important;
     /* Enables clean rounded corner clipping for inner content */
@@ -283,9 +296,15 @@ span i {
     position: relative;
 }
 
+.card:hover {
+    .icons {
+        bottom: 50%;
+        opacity: 1;
+    }
+}
+
 .icons i {
     font-size: 20px;
-
     background-color: white;
     border-radius: 50%;
     padding: 15px;
@@ -297,24 +316,18 @@ span i {
     background-color: #4267B2;
 }
 
-.card:hover {
-
-    .icons {
-        display: flex !important;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        left: 50%;
-        bottom: 50%;
-        transform: translate(-50%, 50%);
-        /* Centers the element on its anchor point */
-        gap: 8px;
-    }
-}
-
-.card img {
-    max-height: 600px;
-    max-width: 380px;
+.icons {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    opacity: 0;
+    transform: translate(-50%, 50%);
+    /* Centers the element on its anchor point */
+    gap: 8px;
+    transition: 0.8s ease;
 }
 
 .card-body {
@@ -352,12 +365,24 @@ span i {
 }
 
 
-.col-12 h2 {
-    font-size: 35px;
+.ourdoctor h2 {
+    font-size: 29px;
     font-weight: 600;
     margin: 20px 0px 10px;
     padding: 0px 0px 10px;
 }
+
+@media(min-width:768px){
+
+    .ourdoctor h2 {
+    font-size: 35px;
+}}
+@media(min-width:1200px){
+
+    .ourdoctor h2 {
+    font-size: 42px;
+}}
+
 
 /* =========== NEWS SECITON =========== */
 
@@ -385,7 +410,7 @@ span i {
 .newscard {
     border-radius: 0.8rem;
     overflow: hidden;
-    max-width: 360px;
+    max-width: 380px;
 }
 
 .newscard-body {
@@ -552,18 +577,20 @@ span i {
 
 /* ===== end === */
 
-footer{
-    padding: 80px 0px 40px ;
+footer {
+    padding: 80px 0px 40px;
 }
 
-footer p{
+
+
+footer p {
     font-size: 12px;
     color: #858585;
     font-weight: 500;
 }
 
-#infoemail{
-    color: #757575 ;
+#infoemail {
+    color: #757575;
     text-decoration: none;
 }
 
@@ -572,124 +599,139 @@ footer p{
 } */
 
 #infoemail:hover span {
-    transition:color 0.5s ease;
-    color: #4267B2 ;
+    transition: color 0.5s ease;
+    color: #4267B2;
 }
 
 
 
-.storiesinfo h5:hover{
+.storiesinfo h5:hover {
     cursor: pointer;
-     transition:color 0.5s ease;
+    transition: color 0.5s ease;
     color: #4267B2 !important;
 }
-.storiesinfo:visited{
-      color: #A5C422 ;
+
+.storiesinfo:visited {
+    color: #A5C422;
 }
 
 .footdiv {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start; /* Aligns flex children (icons, p tags) to the left */
-    text-align: left;         /* Aligns text content flush left */
+    align-items: flex-start;
+    /* Aligns flex children (icons, p tags) to the left */
+    text-align: left;
+    /* Aligns text content flush left */
 }
-.div-contactinfo{
+
+.div-contactinfo {
     font-size: 14px;
     padding: 10px 0px 0px;
 }
 
-.footdiv h4{
-   font-size: 25px;
-   font-weight: 600;
-   color: #454545;
-   margin: 10px 0px;
-   padding: 0px 0px 5px;
+.footdiv h4 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #454545;
+    margin: 10px 0px;
+    padding: 0px 0px 5px;
 
 }
 
-.footdiv p{
+.footdiv p {
     font-weight: 400;
     font-size: 14px;
-    color:#757575 ;
+    color: #757575;
     margin-bottom: 10px;
-   
+
 }
-.footdiv i{
-     background-color: #393939;
-     font-size: 14px;
-     padding: 10px;
-     border-radius: 50%;
-     margin: 0px 5px 2px 0px;
+
+.footdiv i {
+    background-color: #393939;
+    font-size: 14px;
+    padding: 10px;
+    border-radius: 50%;
+    margin: 0px 5px 2px 0px;
 }
+
 /* ======= sec 2 ==== */
-.lateststories{
+.lateststories {
     display: flex;
     margin: 0px 0px 20px;
 }
-.storiesinfo{
+
+.storiesinfo {
     margin-left: 15px;
 }
-.storiesinfo h5{
+
+.storiesinfo h5 {
     font-size: 14px;
     color: #757575;
     margin: 10px 0px 2px;
 }
-.storiesinfo span{
+
+.storiesinfo span {
     font-size: 12px;
     color: #858585;
-   
+
 }
 
 
-.lateststories img{
+.lateststories img {
     height: 65px;
     width: 65px;
     border-radius: 50%;
 }
+
 /* ========== */
 
 
 
-.Opening-Hours p{
+.Opening-Hours p {
     font-size: 14px;
     margin: 0px 0px 10px;
-  
+
 }
 
-.Opening-Hours span{
-      font-weight: 500;
+.Opening-Hours span {
+    font-weight: 500;
 }
-.social-icon i{
+
+.social-icon i {
     background-color: white;
 }
-.social-icon i:hover{    
+
+.social-icon i:hover {
     color: white !important;
     transition: background-color 0.5s;
-    background-color: #4267B2;    
+    background-color: #4267B2;
 }
 
 /* ========= copyright section ===== */
 
-.itemcopyright p{
+.itemcopyright p {
     font-size: 12px;
     color: #858585;
-    margin:  6px 0px 0px ;
+    margin: 6px 0px 0px;
     text-decoration: none;
-    
+
 }
-.itemcopyright{
+
+.itemcopyright {
     border-top: 1px solid #f0f0f0;
 }
-.Copyrightlinks a{
+
+.Copyrightlinks a {
     font-size: 12px;
     font-weight: 500;
     color: #858585;
     text-decoration: none;
-    margin: 4px 0px 0px ;
+    margin: 4px 0px 0px;
     padding: 0px 10px;
 }
-.itemcopyright{
-    margin: 56px 0px 0px ;
+
+.itemcopyright {
+    margin: 56px 0px 0px;
     padding: 35px 15px 10px;
 }
