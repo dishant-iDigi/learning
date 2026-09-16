@@ -1,5 +1,48 @@
-.topbar{
-    font-size: 16px;
-    font-family: Roboto,sans-serif;
-    color: #848E9F;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.text-body{
+    font-size: 16px;
+    color: #848E9F !important;
+    font-weight: 500;
+    font-family: Roboto,sans-serif;
+}
+
+.navbar-brand{
+    padding: 5px 0px;
+    margin: 0px 16px 0px 0px ; 
+}
+.navbar-brand h1{
+    font-size: 32px;
+    font-family: Roboto Condensed,sans-serif;
+    font-weight: bolder;
+    color: #13C5DD;  
+   
+}
+.nav-link.active{
+    color: #13C5DD !important;
+}
+
+.nav-item{
+    font-size: 18px ;
+    font-family: 'Jost', sans-serif;
+    font-weight:700 ;
+    color: #1D2A4D ;
+    padding: 10px 0px;
+}
+
+@media(min-width:992px){
+    .nav-item.nav-link{
+        padding: 30px 0px !important;
+        margin:0px 0px 0px 30px ;
+    }
+}
+
+.nav-item:hover{
+    color: #13C5DD ;
+    transition: 0.5s ease;
+}
+
