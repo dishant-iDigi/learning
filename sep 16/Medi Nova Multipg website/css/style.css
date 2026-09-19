@@ -240,37 +240,127 @@ p {
     border-color: #1D2A4D;
     color: #1D2A4D;
 }
-#b2:hover{
+
+#b2:hover {
     color: white;
     background-color: #1D2A4D;
 }
+
 /* ==Form== */
-.form{
+.form {
     background-color: white;
 }
-.form h1{
+
+.form h1 {
     font-family: Roboto condensed;
     font-weight: bold;
 }
 
-form select,input{
+form select,
+input {
+    color: #848E9F !important;
     background-color: #EFF5F9 !important;
-    box-shadow: #13C5DD !important;
 }
 
-.form-btn{
+form select,
+input:focus {
+    /* box-shadow: none !important; */
+}
+
+
+.form-btn {
     font-weight: 600;
 }
-.form-btn:hover{
+
+.form-btn:hover {
     color: black;
     transition: 0.2s ease;
-  
-}
-.form-btn:hover{
-    box-shadow: 0px 2px 4px black;
-    transition:0.5s ease; 
+
 }
 
-    /* ==form end== */
+.form-btn:hover {
+    box-shadow: 0px 2px 4px black;
+    transition: 0.5s ease;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+    display: none;
+}
+
+/* ==form end== */
 
 /* ========== Appointement  END  ======= */
+
+/* //// doctor search /// */
+
+
+.dr-search {
+    background-color: #13C5DD;
+}
+
+#keyword,
+#search {
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+
+select,
+#keyword {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+#keyword {
+    background-color: #FFFFFF !important;
+    margin-left: 1px;
+}
+
+#search {
+    color: white;
+    font-weight: 600;
+    background-color: #1D2A4D;
+}
+
+/* //// search end///// */
+
+/* =========== START BLOG POST ============ */
+
+.card-container a {
+    text-decoration: none;
+}
+
+.card-container h3 {
+    color: #1D2A4D;
+    font-weight: 700;
+    font-family: Roboto condensed, sans-serif;
+}
+
+.card-container p {
+    color: #848E9F;
+    margin: 0;
+}
+
+.pfp img {
+    height: 25px;
+    border-radius: 50%;
+}
+
+.card-bottom {
+    border-top: 1px solid #d4d8df;
+    font-family: Roboto;
+    color: #848E9F;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* =========== END BLOG POST ============ */
+.footer,
+.footer-pt2 {
+    background-color: #1D2A4D;
+    font-family: Roboto, sans-serif;
+}
+
+.footer-pt2 {
+    border-top: 0.5px solid #0b6875;
+}
