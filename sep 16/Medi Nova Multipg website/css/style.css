@@ -78,8 +78,9 @@
 
 .hero-top {
     background-image: url("../images/hero.jpg");
-    background-position: center top;
+    background-position: right top;
     background-size: cover;
+
 }
 
 h5 {
@@ -161,7 +162,7 @@ h5 {
 
 .service-crd {
     border-radius: 1rem;
-    background-color: #EFF5F9;
+    background-color: rgb(239, 245, 249) !important ;
     position: relative;
 }
 
@@ -246,7 +247,7 @@ p {
     background-color: #1D2A4D;
 }
 
-/* ==Form== */
+/* --Form START-- */
 .form {
     background-color: white;
 }
@@ -260,11 +261,13 @@ form select,
 input {
     color: #848E9F !important;
     background-color: #EFF5F9 !important;
+    box-shadow: none;
 }
 
-form select,
+select:focus,
 input:focus {
-    /* box-shadow: none !important; */
+    box-shadow: 0px 0px 0px 4px rgba(19, 197, 221, 0.2) !important;
+    /* x , y , blur , spread radius ( r , g, b, opacity ) */
 }
 
 
@@ -279,7 +282,7 @@ input:focus {
 }
 
 .form-btn:hover {
-    box-shadow: 0px 2px 4px black;
+    box-shadow: 0px px 4px black;
     transition: 0.5s ease;
 }
 
@@ -288,13 +291,101 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     display: none;
 }
 
-/* ==form end== */
+/* --form end-- */
 
 /* ========== Appointement  END  ======= */
 
+/* =============PRICES START======== */
+.cards {
+    text-align: center;
+    border-radius: 8px;
+    overflow: hidden;
+    /* max-width: 400px; */
+}
+
+.cards img {
+    width: 100%;
+    display: block;
+}
+
+.dollar {
+    font-size: 22px;
+}
+
+.price h3 {
+    font-size: 27px;
+    font-weight: bold;
+    font-family: Roboto Condensed, sans-serif;
+}
+
+.price h1 {
+    font-size: 53px;
+}
+
+.year {
+    font-size: 16px;
+    font-weight: 100;
+    align-items: baseline;
+}
+
+.card-img {
+    position: relative;
+}
+
+.card-img::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(29, 42, 77, 0.8);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.price {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.detail {
+
+    background-color: #EFF5F9;
+}
+
+.detail p {
+    color: #848E9F;
+    font-family: Roboto, sans-serif;
+}
+
+.detail button {
+    background-color: #13C5DD !important;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    border: none;
+}
+
+.detail button:hover {
+    color: black;
+    box-shadow: 0px 1px 2px 1px #1D2A4D;
+}
+
+
+
+/* =============PRICES END ======== */
+
+/* =============DOCTORS START ======== */
+
+
+
+
+/* =============DOCTORS END ======== */
+
+
+
 /* //// doctor search /// */
-
-
 .dr-search {
     background-color: #13C5DD;
 }
@@ -305,7 +396,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border-bottom-left-radius: 0 !important;
 }
 
-select,
 #keyword {
     border-top-right-radius: 0 !important;
     border-bottom-right-radius: 0 !important;
@@ -347,9 +437,9 @@ select,
 }
 
 .card-bottom {
-    border-top: 1px solid #d4d8df;
-    font-family: Roboto;
     color: #848E9F;
+    font-family: Roboto;
+    border-top: 1px solid #d4d8df;
     display: flex;
     justify-content: space-between;
 }
@@ -361,6 +451,84 @@ select,
     font-family: Roboto, sans-serif;
 }
 
+.footer i {
+    color: #13C5DD;
+    padding-right: 10px;
+}
+
+.footer a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.footer i {
+    color: white;
+    margin-bottom: 8px;
+
+}
+
+.footer h5 {
+    font-size: 24px;
+    border-color: #354F8E !important;
+}
+
+
+.mail input {
+    color: #FFFFFF;
+    border: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.mail button {
+    border: none;
+    color: white;
+    font-weight: 600;
+    background-color: #13C5DD;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.footer h6 {
+    font-weight: 600;
+    color: #13C5DD !important;
+    font-family: Roboto Condensed;
+}
+
+.div-ico {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #13C5DD;
+}
+
+.div-ico i {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 0;
+    margin: 0;
+}
+
+.div-ico:hover i {
+    color: black !important;
+    transition: 0.3s ease-in-out;
+}
+
+/* ------------------ */
+.footer-pt2 a {
+    color: #13C5DD;
+    text-decoration: none;
+}
+
 .footer-pt2 {
     border-top: 0.5px solid #0b6875;
+}
+
+.cpy {
+    display: flex;
+    justify-content: space-between;
 }

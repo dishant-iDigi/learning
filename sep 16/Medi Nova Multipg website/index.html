@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Medinova Clone</title>
 
     <!-- Google Fonts Preconnect -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,11 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-
+    
+    <!-- Owl -->
+    <link rel="stylesheet" href="./owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="./owlcarousel/owl.theme.default.min.css">
+    
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
@@ -357,8 +361,94 @@
                 </div>
 
                 <!-- owl crousal -->
-                <div class="crousal"></div>
-
+                <div class="owl-carousel owl-theme">
+                    <!-- card -1  -->
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./images/price-1.jpg">
+                            <div class="price">
+                                <h3 class="text-white ">Pregnanacy Care</h3>
+                                <h1 class="display-4 text-white mb-0"><small
+                                        class="fw-normal  align-top dollar">$</small>49<small class="year">/Year</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="detail py-5">
+                            <p>Emergency Medical Treatement</p>
+                            <p>Highly Experienced Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button class="btn btn-primary rounded-pill px-5 py-3">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./images/price-2.jpg">
+                            <div class="price">
+                                <h3 class="text-white mb-0">Health Checkup</h3>
+                                <h1 class="display-4 text-white"><small
+                                        class="fw-normal  align-top dollar">$</small>99<small class="year">/Year</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="detail py-5">
+                            <p>Emergency Medical Treatement</p>
+                            <p>Highly Experienced Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button class="btn btn-primary rounded-pill px-5 py-3">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./images/price-3.jpg">
+                            <div class="price">
+                                <h3 class="text-white mb-0">Dental Checkup</h3>
+                                <h1 class="display-4 text-white"><small
+                                        class="fw-normal  align-top dollar">$</small>149<small
+                                        class="year">/Year</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="detail py-5">
+                            <p>Emergency Medical Treatement</p>
+                            <p>Highly Experienced Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button class="btn btn-primary rounded-pill px-5 py-3">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src="./images/price-4.jpg">
+                            <div class="price">
+                                <h3 class="text-white mb-0">Operation & Surgery</h3>
+                                <h1 class="display-4 text-white"><small
+                                        class="fw-normal  align-top dollar">$</small>199<small
+                                        class="year">/Year</small>
+                                </h1>
+                            </div>
+                        </div>
+                        <div class="detail py-5">
+                            <p>Emergency Medical Treatement</p>
+                            <p>Highly Experienced Doctors</p>
+                            <p>Highest Success Rate</p>
+                            <p>Telephone Service</p>
+                            <button class="btn btn-primary rounded-pill px-5 py-3">
+                                Apply Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -376,9 +466,12 @@
                     <h1 class=" display-4 ">Qualified Healthcare Professionals</h1>
                 </div>
 
-                <!-- owl crousal -->
-                <div class="crousal"></div>
-
+                <!-- Doctors  owl section -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="./images/team-1.jpg" alt=""></div>
+                    <div class="item"><img src="./images/team-2.jpg" alt=""></div>
+                    <div class="item"><img src="./images/team-3.jpg" alt=""></div>
+                </div>
             </div>
         </div>
     </div>
@@ -513,7 +606,6 @@
                                     <small><i class="fa-regular fa-comment ms-2" style="color: rgb(19, 197, 221);"></i>
                                         123</small>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -528,45 +620,83 @@
         <div class="container py-5">
             <div class="row">
                 <!-- CONTENT -->
-                <div class="col-12 col-sm-5 col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-3 px-3">
                     <h5 class="text-uppercase mb-md-4 d-inline-block">Get In Touch</h5>
-                    <p class="m-0">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
+                    <p class="">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
                     </p>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot" style="color: #13C5DD;"></i> 123 Street, New
+                        York, USA</p>
+                    <p class="mb-2"><i class="fa-solid fa-envelope" style="color: #13C5DD;"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone" style="color: #13C5DD;"></i> +012 345 67890</p>
                 </div>
-                <div class="col-12 col-sm-5 col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
                     <h5 class="text-uppercase mb-md-4 d-inline-block">Quick Links</h5>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Home</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> About Us</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Our Services</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Meet The Team</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Latest Blog</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Contact Us</a>
                 </div>
-                <div class="col-12 col-sm-5 col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
                     <h5 class="text-uppercase mb-md-4 d-inline-block">Popular Links</h5>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Home</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> About Us</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Our Services</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Meet The Team</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Latest Blog</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Contact Us</a>
                 </div>
-                <div class="col-12 col-sm-5 col-lg-3">
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
                     <h5 class="text-uppercase mb-md-4 d-inline-block">Newsletter</h5>
-                </div>
+                    <div class="mail d-flex">
+                        <input type="email" class="form-control" placeholder="Your Email Address"
+                            style="height: 57px; flex: 1;">
 
+                        <button class="btn btn-primary px-3 py-3" style="height: 57px; white-space: nowrap;">
+                            Sign Up
+                        </button>
+                    </div>
+                    <h6 class="text-white text-uppercase my-3">Follow us</h6>
+                    <div class="icons d-flex gap-2">
+                        <div class="div-ico "> <i class="fa-brands fa-twitter "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-facebook-f "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-linkedin-in "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-instagram "></i></div>
+                    </div>
+                </div>
             </div>
         </div>
-
-
     </div>
 
     <div class="footer-pt2 ">
         <!-- COPYRIGHT -->
         <div class="container py-4 cpy">
             <div class="rights d-flex d-inline-flex">
-                <a href="#">© MEDI PVT LTD </a>
+                <p class="m-0 px-1">© </p>
+                <a href="#"> Medi Pvt Ltd</a>
                 <p class="m-0">.All Rights Reserved.</p>
             </div>
-            <div class="owner"></div>
+            <div class="owner d-flex">
+                <p class="m-0">Designed by<a href=""> HTML Codex</a></p>
+                <p class="m-0">. Distributed by<a href=""> ThemeWagon.</a></p>
+            </div>
         </div>
 
     </div>
     <!-- FOOTER END -->
 
 
-    <!-- custum js -->
-    <script src="./JavaScript/script.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Your local jQuery -->
+<!-- <script src="./Jquery/jquery.min.js"></script> -->
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<!-- Owl Carousel -->
+<script src="./owlcarousel/owl.carousel.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Your custom JS -->
+<script src="./JavaScript/script.js"></script>
 </body>
 
 </html>
