@@ -247,6 +247,12 @@ p {
     background-color: #1D2A4D;
 }
 
+.appointment-btns a:hover {
+    transition: 0.4s !important;
+    box-shadow: 0px 8px 8px -7px black !important;
+
+}
+
 /* --Form START-- */
 .form {
     background-color: white;
@@ -277,9 +283,13 @@ input:focus {
 
 .form-btn:hover {
     color: black;
-    transition: 0.2s ease;
-
+    box-shadow: 0px 5px 4px -4px black;
+    /* box-shadow:  horizontal  vertical  blur  spread  color;
+    0          5px       4px   -4px    black */
+    transition: 0.4s ease-in !important;
 }
+
+
 
 .form-btn:hover {
     box-shadow: 0px px 4px black;
@@ -369,7 +379,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 
 .detail button:hover {
     color: black;
-    box-shadow: 0px 1px 2px 1px #1D2A4D;
+    transition: 0.5s;
+    box-shadow: 0px 8px 8px -7px black !important;
 }
 
 .owl-carousel {
@@ -392,9 +403,15 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     position: relative;
 }
 
+.owl-cards.owl-prev:hover,
+.owl-cards.owl-next:hover {
+    color: black !important;
+    transition: 1s;
+}
 
 
-.owl-carousel::before {
+
+.owl-carousel.owl-cards::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -418,9 +435,95 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 /* =============PRICES END ======== */
 
 /* =============DOCTORS START ======== */
+.doctor-card {
+    background-color: #EFF5F9;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
 
+.doctor-card h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #1D2A4D;
+    font-family: Roboto condensed, sans-serif;
+}
 
+.doctor-card h6 {
+    font-size: 16px;
+    font-style: italic;
+    color: #13C5DD;
+    font-family: Roboto condensed, sans-serif;
+}
 
+.doctor-card p {
+    color: #848E9F;
+}
+
+.doctor-card img {
+    object-fit: cover;
+}
+
+.dr-icons {
+    border-top: 1px solid #dde4ee;
+}
+
+.owl-team .owl-nav .owl-prev {
+    color: white !important;
+    background-color: #13C5DD !important;
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    transition: 0.3s ease;
+}
+
+.owl-team .owl-nav .owl-prev:hover {
+    background-color: #0b6875 !important;
+    transition: 0.3s ease;
+}
+
+.owl-team .owl-nav .owl-next {
+    color: white !important;
+    background-color: #13C5DD !important;
+    position: absolute;
+    top: 30%;
+    right: 7%;
+    transition: 0.3s ease;
+}
+
+.owl-team .owl-nav .owl-next:hover {
+    background-color: #0b6875 !important;
+    transition: 0.3s ease;
+}
+
+.dr-ico {
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #13C5DD;
+    transition: 0.5s ease-in-out;
+}
+
+.dr-ico:hover {
+    box-shadow: 0 5px 4px -4px black;
+    transition: 0.5s;
+}
+
+.dr-ico i {
+    color: white;
+    transition: 0.5s ease-in-out;
+
+}
+
+.dr-ico:hover i {
+    color: black;
+    transition: 0.5s ease-in-out;
+
+}
 
 /* =============DOCTORS END ======== */
 
@@ -453,7 +556,83 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #1D2A4D;
 }
 
+#search:hover {
+    transition: 0.5s;
+    box-shadow: 0px 5px 8px -4px black !important;
+}
+
 /* //// search end///// */
+
+/* =========== START TestiMonial ============ */
+
+.owl-testimonial {
+    padding-bottom: 0;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+
+.quote {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-pic img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.quote i {
+    font-size: 32px;
+    padding: 15px;
+    border-radius: 50%;
+    color: #13C5DD;
+    background-color: #EFF5F9;
+
+
+}
+
+.testimonial h3 {
+    font-family: Roboto Condensed, sans-serif;
+    color: #1D2A4D;
+    font-weight: bold;
+}
+
+.testimonial h6 {
+    font-family: Roboto Condensed, sans-serif;
+    color: #13C5DD;
+}
+
+/* -- dots --- */
+.owl-dots {
+    margin-top: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owl-testimonial .owl-dot span {
+    height: 20px !important;
+    width: 20px !important;
+    border: 2px solid #13C5DD;
+    background-color: #EFF5F9 !important;
+    transition: 0.5s !important;
+}
+
+.owl-testimonial .owl-dot.active span {
+    margin: auto;
+    height: 40px !important;
+    width: 40px !important;
+    background-color: #13C5DD !important;
+    transition: 0.5s !important;
+}
+
+/* =========== END TestiMonial ============ */
 
 /* =========== START BLOG POST ============ */
 
@@ -526,7 +705,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     border: none;
     color: white;
     font-weight: 600;
-    background-color: #13C5DD;
+    background-color: #13C5DD !important;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 }
@@ -572,4 +751,32 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 .cpy {
     display: flex;
     justify-content: space-between;
+}
+
+
+.back-to-top {
+    position: fixed;
+    right: 45px;
+    bottom: -25px;
+    z-index: 99;
+
+    width: 46px;
+    height: 70px;
+    padding: 0;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #13C5DD !important;
+    color: white;
+    border-radius: 25%;
+}
+
+.back-to-top i {
+    padding: 14px;
+}
+
+.back-to-top:hover {
+    background-color: #13C5DD !important;
+    opacity: 0.8;
 }
