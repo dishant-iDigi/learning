@@ -162,7 +162,7 @@ h5 {
 
 .service-crd {
     border-radius: 1rem;
-    background-color: rgb(239, 245, 249) !important ;
+    background-color: rgb(239, 245, 249) !important;
     position: relative;
 }
 
@@ -300,8 +300,8 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     text-align: center;
     border-radius: 8px;
     overflow: hidden;
-    /* max-width: 400px; */
 }
+
 
 .cards img {
     width: 100%;
@@ -372,7 +372,48 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     box-shadow: 0px 1px 2px 1px #1D2A4D;
 }
 
+.owl-carousel {
+    padding: 0 48px 48px;
+    position: relative;
+}
 
+.owl-nav {
+    margin-top: 20px;
+}
+
+.owl-prev,
+.owl-next {
+    height: 45px;
+    width: 45px;
+    margin-top: 35px !important;
+    color: #13C5DD !important;
+    border-radius: 50% !important;
+    background-color: white !important;
+    position: relative;
+}
+
+
+
+.owl-carousel::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #13C5DD !important;
+    z-index: 0;
+}
+
+.owl-carousel::before {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.owl-carousel::before {
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
 
 /* =============PRICES END ======== */
 
