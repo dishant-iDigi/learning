@@ -263,6 +263,7 @@ p {
     font-weight: bold;
 }
 
+
 form select,
 input {
     color: #848E9F !important;
@@ -588,7 +589,7 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .quote i {
-    font-size: 32px;
+    font-size: 38px !important;
     padding: 15px;
     border-radius: 50%;
     color: #13C5DD;
@@ -780,3 +781,5 @@ input[type="time"]::-webkit-calendar-picker-indicator {
     background-color: #13C5DD !important;
     opacity: 0.8;
 }
+
+/* ====== end of home page  ==== */

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medinova Clone by dishant</title>
+
+    <!-- Google Fonts Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&amp;family=Roboto:wght@400;700&amp;display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- AOS Animation style sheet cdn  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <!-- Owl -->
+    <link rel="stylesheet" href="../owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../owlcarousel/owl.theme.default.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="../Navbar css/style.css">
+
+    <style>
+        #b1{
+            background-color: #13C5DD;
+            border: none;
+            font-weight: 700;
+        }
+        #b1:hover{
+         color: black;   
+        }
+        #b2{
+            box-sizing: border-box;
+            border: 1px solid #13C5DD !important;
+            color: #13C5DD;
+            border: none;
+            font-weight: 700;
+        }
+        #b2:hover{
+         color: black;   
+         background-color: #13C5DD !important;
+         transition: 0.5s;
+        }
+        .form{
+            background-color: #EFF5F9;
+        }
+        .form-control,select{
+            background-color: #FFFFFF !important;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid py-2 border-bottom d-none d-lg-block">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6 text-start">
+                    <a class="text-decoration-none text-body " href="#"><i class="fa-solid fa-phone px-2 "></i> +012 345
+                        6789</a>
+                    <span class="text-body px-2">|</span>
+                    <a class="text-decoration-none  text-body " href="#"><i
+                            class="fa-regular fa-envelope px-2"></i>info@example.com</a>
+                </div>
+                <div class="col-md-6 text-center text-lg-end">
+                    <div class="d-inline-flex align-items-center  ">
+                        <a class="text-body px-2" href="#!">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-body px-2" href="#!">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-body px-2" href="#!">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-body px-2" href="#!">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-body ps-2" href="#!">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+    <!-- Nav Bar Start -->
+
+    <section class="nav section sticky-top bg-light shadow-sm">
+        <div class="container-fluid  ">
+            <div class="container ">
+                <div class="navbar navbar-expand-lg py-3 py-lg-0">
+                    <a href="index.html" class="navbar-brand">
+                        <h1 class="m-0 text-uppercase "><i class="fa fa-clinic-medical me-2"></i>Medinova</h1>
+                    </a>
+
+                    <button class="navbar-toggler collapsed" data-bs-toggle="collapse" type="toggler-button"
+                        data-bs-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="navbar-collapse collapse" id="navbarCollapse">
+                        <div class="navbar-nav ms-auto  py-0">
+
+                            <a href="../index.html" class="nav-item nav-link ">Home</a>
+                            <a href="../about.html" class="nav-item nav-link ">About</a>
+                            <a href="../services.html" class="nav-item nav-link ">Service</a>
+                            <a href="../pricing.html" class="nav-item nav-link ">Pricing</a>
+
+                            <div class="nav-item dropdown py-0">
+                                <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown"
+                                    aria-expanded="false">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="./blog-grid.html" class="dropdown-item ">Blog Grid</a>
+                                    <a href="./detail.html" class="dropdown-item">Blog Detail</a>
+                                    <a href="./team.html" class="dropdown-item ">The Team</a>
+                                    <a href="./testimonial.html" class="dropdown-item active">Testimonial</a>
+                                    <a href="./appointment.html" class="dropdown-item">Appointment</a>
+                                    <a href="./search.html" class="dropdown-item">Search</a>
+                                </div>
+                            </div>
+                            <a href="../contact.html" class="nav-item nav-link ">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nav Bar END -->
+
+    <!-- START SEC 4 APPOINTEMENT  -->
+    <div class="apt container-fluid py-5  ">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-12 col-lg-6">
+                    <!-- Description  -->
+                    <div class=" mb-5 mb-lg-0">
+                        <h5 class="text-uppercase  d-inline-block  " style="border-color: #DEE2E6 !important; ">
+                            Appointment
+                        </h5>
+                        <h1 class=" display-4 ">Make An Appointment For Your Family</h1>
+                        <p class="py-4" style="color: #848E9F; font-family: Roboto,sans-serif;">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea
+                            et dolore et
+                            at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et
+                            dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore
+                            sanctus sed et. Takimata takimata sanctus sed.</p>
+                        <div class="appointment-btns ">
+                            <a href="#" id="b1" class="btn btn-secondary rounded-pill px-md-5 py-3 mx-1 my-1  ">Find
+                                Doctor</a>
+                            <a href="#" id="b2" class="btn  rounded-pill px-md-5 py-3 mx-1 my-1 ">Read
+                                More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="container form p-5 rounded text-center">
+                        <h1 class="mb-4">Book An Appointment</h1>
+                        <form action="post">
+                            <div class="row g-3">
+                                <div class="col-sm-12 col-md-6 ">
+                                    <select class="form-select  border-0" style="height: 55px;">
+                                        <option selected="">Choose Department</option>
+                                        <option value="1">Department 1</option>
+                                        <option value="2">Department 2</option>
+                                        <option value="3">Department 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <select class="form-select  border-0" style="height: 55px;">
+                                        <option selected="">Select Doctor</option>
+                                        <option value="1">Doctor 1</option>
+                                        <option value="2">Doctor 2</option>
+                                        <option value="3">Doctor 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-12 col-md-6 ">
+                                    <input type="text" class="form-control border-0" placeholder="Your Name"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="email" class="form-control border-0" placeholder="Your Email"
+                                        style="height: 55px;">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="date" id="date" class="form-control border-0" placeholder="Date"
+                                        style="height: 55px;" onclick="this.showPicker();">
+                                </div>
+                                <div class="col-sm-12 col-md-6">
+                                    <input type="time" id="time" class="form-control border-0" placeholder="Time"
+                                        style="height: 55px;" onclick="this.showPicker();">
+                                </div>
+                                <a class="py-3 btn  btn-secondary border-0 form-btn"
+                                    style="background-color:#13C5DD ;">Make An Appointment</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- END SEC 4 APPOINTEMENT    -->
+
+
+
+    <!-- FOOTER START  -->
+    <div class="footer mt-5 py-5">
+        <div class="container py-5">
+            <div class="row">
+                <!-- CONTENT -->
+                <div class="col-12 col-sm-5 col-lg-3 px-3">
+                    <h5 class="text-uppercase mb-md-4 d-inline-block">Get In Touch</h5>
+                    <p class="">No dolore ipsum accusam no lorem. Invidunt sed clita kasd clita et et dolor sed dolor
+                    </p>
+                    <p class="mb-2"><i class="fa-solid fa-location-dot" style="color: #13C5DD;"></i> 123 Street, New
+                        York, USA</p>
+                    <p class="mb-2"><i class="fa-solid fa-envelope" style="color: #13C5DD;"></i>info@example.com</p>
+                    <p class="mb-2"><i class="fa-solid fa-phone" style="color: #13C5DD;"></i> +012 345 67890</p>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
+                    <h5 class="text-uppercase mb-md-4 d-inline-block">Quick Links</h5>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Home</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> About Us</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Our Services</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Meet The Team</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Latest Blog</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Contact Us</a>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
+                    <h5 class="text-uppercase mb-md-4 d-inline-block">Popular Links</h5>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Home</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> About Us</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Our Services</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Meet The Team</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Latest Blog</a>
+                    <a href="#" class="mb-2"><i class="fa-solid fa-angle-right m-0 p-1"></i> Contact Us</a>
+                </div>
+                <div class="col-12 col-sm-5 col-lg-3 px-3 ">
+                    <h5 class="text-uppercase mb-md-4 d-inline-block">Newsletter</h5>
+                    <div class="mail d-flex">
+                        <input type="email" class="form-control" placeholder="Your Email Address"
+                            style="height: 57px; flex: 1;">
+
+                        <button class="btn btn-primary px-3 py-3" style="height: 57px; white-space: nowrap;">
+                            Sign Up
+                        </button>
+                    </div>
+                    <h6 class="text-white text-uppercase my-3">Follow us</h6>
+                    <div class="icons d-flex gap-2">
+                        <div class="div-ico "> <i class="fa-brands fa-twitter "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-facebook-f "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-linkedin-in "></i></div>
+                        <div class="div-ico "> <i class="fa-brands fa-instagram "></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-pt2 ">
+        <!-- COPYRIGHT -->
+        <div class="container py-4 cpy">
+            <div class="rights d-flex d-inline-flex">
+                <p class="m-0 px-1">© </p>
+                <a href="#"> Medi Pvt Ltd</a>
+                <p class="m-0">.All Rights Reserved.</p>
+            </div>
+            <div class="owner d-flex">
+                <p class="m-0">Designed by<a href=""> HTML Codex</a></p>
+                <p class="m-0">. Distributed by<a href=""> ThemeWagon.</a></p>
+            </div>
+        </div>
+
+    </div>
+    <!-- FOOTER END -->
+    <!-- Go To Top -->
+    <a href="#" class="btn  back-to-top rounded-pill">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Owl Carousel -->
+    <script src="../owlcarousel/owl.carousel.min.js"></script>
+    <!-- Your local jQuery -->
+    <script src="../Jquery/jquery.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom JS -->
+    <script src="../JavaScript/script.js"></script>
+</body>
+
+</html>
