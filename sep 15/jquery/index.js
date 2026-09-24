@@ -11,3 +11,7 @@ $("button").html("<em>Button<em>");
 console.log($("img").attr("src"));
 
 $("a").attr("href","https://www.yahoo.com")
+
+$(document).keypress(function(event){
+    $("h1").text(event.key);
+})
