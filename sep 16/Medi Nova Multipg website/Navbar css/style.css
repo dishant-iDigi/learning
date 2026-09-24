@@ -16,6 +16,8 @@
     font-family: Roboto Condensed, sans-serif;
     font-weight: bolder;
     color: #13C5DD;
+    text-transform: uppercase;
+    margin: 0;
 
 }
 
@@ -673,7 +675,6 @@ input[type="time"]::-webkit-calendar-picker-indicator {
 }
 
 .footer i {
-    color: #13C5DD;
     padding-right: 10px;
 }
 

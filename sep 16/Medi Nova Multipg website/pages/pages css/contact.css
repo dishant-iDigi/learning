@@ -1,0 +1,108 @@
+/* === services ===== */
+section.services .title {
+    max-width: 500px;
+}
+
+.services .title h5 {
+    max-width: 500px;
+    border-color: #DEE2E6 !important;
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+.services .service-crd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0px;
+}
+
+
+.service-crd .ico {
+    background-color: #13C5DD;
+    color: white;
+    font-size: 2rem;
+    height: 66px;
+    width: 107px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-9deg);
+}
+
+.service-crd .ico i {
+    transform: rotate(10deg);
+}
+
+.service-crd h6 {
+    font-weight: bold;
+    font-family: Roboto Condensed;
+
+}
+
+/* = end services === */
+
+/* ================ */
+section.mapblock_info iframe {
+    height: 500px;
+}
+
+.mapblock_info_form .form-control {
+    width: 100%;
+    background-color: #EFF5F9;
+    box-sizing: border-box;
+    height: auto;
+    border: none;
+    height: 55px;
+}
+
+textarea {
+    min-height: 132px !important;
+    background-color: #EFF5F9;
+}
+
+textarea:focus {
+    box-shadow: 0px 0px 0px 4px rgba(19, 197, 221, 0.2) !important;
+}
+
+.mapblock_info_form .i1 {
+    width: 49%;
+    display: inline-block;
+}
+
+section.mapblock_info .mapblock_info_form {
+    width: 60%;
+    margin: auto;
+    margin-top: -140px;
+    background-color: white;
+    padding: 4%;
+    border-radius: 8px;
+}
+
+.mapblock_info_form button {
+    font-weight: 600;
+    background-color: #13C5DD !important;
+    width: 100%;
+}
+
+.mapblock_info_form .form-control {
+    margin-bottom: 15px;
+}
+
+/* ====== footer === */
+
+.footer .container .Adrs i {
+    color: #13C5DD;
+}
+
+.footer #signup {
+    height: 57px;
+    white-space: nowrap;
+}
+
+.footer .mail input {
+    height: 57px;
+    flex: 1;
+}
