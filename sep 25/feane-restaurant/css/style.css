@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .bg-box {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+header .bg-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+header .navbar {
+    display: flex;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+.navbar [type="button"] {
+    border: none;
+    color: white;
+    box-shadow: none !important;
+}
+
+.navbar .navbar-brand {
+    font-size: 32px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Dancing Script', cursive;
+}
+
+.navbar .navbar-nav .nav-item {
+    font-size: 16px;
+    margin: auto 12px;
+    color: white;
+    font-family: Open Sans, sans-serif;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .nav-link.active {
+    color: #FFBE33 !important;
+}
+
+.navbar-nav-order {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.navbar-nav-order i,
+button {
+    padding: 0 10px;
+}
+
+.orange-btn {
+    padding: 8px 33px;
+    color: white;
+    background-color: #FFBE33;
+    border-radius: 2rem;
+    font-family: Open Sans, sans-serif;
+    border: none;
+}
+
+header .carousel {
+    margin-top: 25%;
+}
+
+header .carousel .carousel-inner {
+    margin-bottom: 150px;
+}
+
+header .carousel .carousel-indicators {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+}
+
+header .carousel .carousel-item {
+    color: white;
+}
+
+header .carousel .carousel-item h1 {
+    font-size: 56px;
+    font-family: 'Dancing Script', cursive;
+}
+
+header .carousel .carousel-item p {
+    font-size: 14px;
+    font-family: Open Sans, sans-serif;
+}
+
+header .carousel .carousel-indicators {
+    display: flex;
+    align-items: center;
+}
+
+header .carousel .carousel-indicators button {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+header .carousel .carousel-indicators [class="active"] {
+    height: 20px;
+    width: 20px;
+    background-color: #FFBE33;
+}
