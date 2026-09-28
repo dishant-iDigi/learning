@@ -5,6 +5,9 @@
 }
 
 /* common classes  */
+body {
+    font-family: Open Sans, sans-serif
+}
 
 .section-division {
     margin: 80px 0px;
@@ -15,13 +18,18 @@
     color: white;
     background-color: #FFBE33;
     border-radius: 2rem;
-    font-family: Open Sans, sans-serif;
     border: none;
     transition: 0.3s;
 }
 
 .commonbtn button:hover {
     background-color: #e0a72d;
+}
+
+h1 {
+    font-size: 56px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
 }
 
 h2 {
@@ -37,6 +45,7 @@ h4 {
     font-size: 28px;
     font-weight: bold;
 }
+
 
 /* common classes end  */
 
@@ -79,7 +88,6 @@ header .navbar {
     font-size: 16px;
     margin: auto 12px;
     text-transform: uppercase;
-    font-family: Open Sans, sans-serif;
 }
 
 .navbar .collapse .navbar-nav .nav-link.active {
@@ -120,23 +128,25 @@ section.main_banner_block {
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 180px;
+    max-width: 576px;
 }
 
 .main_banner_block .owl-carousel .owl-dots {
     display: flex;
     justify-content: flex-start;
     padding-bottom: 18%;
-
+    display: inline-block;
 }
 
 
-/* ======== */
+/* ==== offer block cards ==== */
 
 .offer_block .offer_block_cards {
     display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
-    flex-direction: column;
+    align-items: center;
     color: white;
     background-color: #222831;
     padding: 20px 10px;
@@ -145,12 +155,17 @@ section.main_banner_block {
     margin: 10px;
 }
 
+.offer_block .offer_block_cards .offer_block_cards_info {
+    gap: 0 !important;
+}
+
 .offer_block .offer_block_cards .offer_block_cards_img {
     height: 180px;
     width: 180px;
     border-radius: 50%;
     border: 4px solid #FFBE33;
     overflow: hidden;
+
 }
 
 .offer_block .offer_block_cards .offer_block_cards_img img {
@@ -160,11 +175,15 @@ section.main_banner_block {
     transition: 0.4s ease-in-out;
 }
 
-.offer_block .offer_block_cards .offer_block_cards_img:hover img {
+.offer_block_cards_img:hover img {
     transform: scale(1.2);
 }
 
-.offer_block .offer_block_cards .offer_block_cards_info {
+.offer_block_cards_info_title h5 {
+    font-size: 24px;
+}
+
+.offer_block_cards_info {
     display: flex;
     flex-direction: column;
     color: white;
@@ -175,20 +194,24 @@ section.main_banner_block {
     font-family: 'Dancing Script', cursive;
 }
 
-
-.Offer .item-cont h5 {
-    font-size: 24px;
-}
-
-.Offer .item-cont h6 span {
+.offer_block_cards_info_price span {
     font-size: 40px;
 }
 
 /* === food menu === */
 
+.our_menu_block_tab_list_block ul {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 40px 0px;
+    padding: 0;
+}
+
 .our_menu_block_tab_list_block li {
     display: inline-block;
     list-style: none;
+    color: #0c0c0c;
     padding: 5px 20px;
     border-radius: 20px;
 }
@@ -196,4 +219,176 @@ section.main_banner_block {
 .our_menu_block_tab_list_block li.active {
     color: white;
     background-color: #222831;
+}
+
+
+.our_menu_block_food_item_block_food_item_box {
+    border-radius: 14px;
+    color: white;
+    width: auto;
+    background-color: #222831;
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_img_box {
+
+    height: 215px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    border-bottom-left-radius: 15%;
+    padding: 25px 30px;
+    background-color: #f1f2f3;
+
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_img_box img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: 0.2s ease-in-out;
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_img_box:hover img {
+    transform: scale(1.2);
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_info_box {
+    padding: 20px;
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_info_box .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.our_menu_block_food_item_block_food_item_box .food_item_box_info_box .price i {
+    color: white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background-color: #FFBE33;
+    align-items: center;
+    justify-self: center;
+}
+
+
+.our_menu_block .our_menu_block_food_item_block .commonbtn {
+    margin-top: 45px;
+    justify-self: center;
+}
+
+/* ======== burder about section === */
+
+.about_burger {
+    background-color: #222831;
+    padding: 90px 0px;
+    color: white;
+}
+
+.about_burger .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.about_burger_img_block {
+    display: flex;
+    justify-content: center;
+}
+
+.about_burger_img_block img {
+    height: 100%;
+    width: 100%;
+    max-width: 445px;
+}
+
+.about_burger_info_block_heading {
+    justify-self: start;
+}
+
+.about_burger_info_block_description p {
+    margin-top: 15px;
+}
+
+
+/* =======Booking section=========== */
+.booking_heading {
+    display: inline-block;
+
+}
+
+.booking_form_block .form-control {
+    height: 50px;
+    width: 100%;
+    margin: 28px 0px;
+    border-color: #000000;
+    box-shadow: none;
+}
+
+.booking_map_block iframe {
+    width: 100%;
+    height: 362px;
+    border-radius: 8px;
+    margin: 30px 0px;
+}
+
+/* ======Cutomer rating section ======= */
+
+.customer_ratings_block_slider_item_block_detail_box {
+    color: white;
+    border-radius: 8px;
+    background-color: #222831;
+    padding: 25px 25px 15px;
+}
+
+.customer_ratings_block_slider_item_block_detail_box_customer_name h6 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.customer_ratings_block_slider_item_block_detail_box_comment p {
+    font-size: 15px;
+}
+
+.customer_ratings_block_slider_item_block_detail_box_location p {
+    font-family: Open Sans, sans-serif
+}
+
+.customer_ratings_block_slider_item_block_pic_box {
+    height: 115px;
+    width: 115px;
+    margin-top: 30px;
+    position: relative;
+}
+
+.customer_ratings_block_slider_item_block_pic_box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 4px solid #FFBE33;
+    object-fit: cover;
+}
+.customer_ratings_block_slider_item_block_pic_box_sudo{
+    height: 40px;
+    width: 50px;
+    background-color: #FFBE33;
+
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 30%;
+    transform: translateX(-50%);
+    transform: rotate(45deg);
+}
+
+.customer_ratings_block .owl-carousel .owl-nav button span {
+    font-size: 35px;
+    padding: 0px 20px 5px;
+    border-radius: 50%;
+    color: white;
+    background-color: #FFBE33;
+}
+.customer_ratings_block .owl-carousel .owl-nav:hover button{
+    color: none !important;
+    background-color: none !important;
 }

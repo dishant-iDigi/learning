@@ -33,3 +33,13 @@
         justify-content: flex-start;
     }
 }
+
+
+/* /// food items media /// */
+
+@media(min-width:768px){
+ 
+.our_menu_block_food_item_block_food_item_box .food_item_box_img_box {
+      padding: 40px 80px;
+}
+}
