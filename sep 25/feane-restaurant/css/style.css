@@ -114,7 +114,7 @@ section.main_banner_block {
     z-index: 0;
     width: 100%;
     margin-top: 0;
-    /* 3. Overrides the 80px top margin coming from .section-division */
+    /* 3. Overrides the 80px top margin coming frovm .section-division */
 }
 
 /* Home page only */
@@ -206,6 +206,7 @@ section.main_banner_block {
 .our_menu_block_tab_list_block ul {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     cursor: pointer;
     margin: 40px 0px;
     padding: 0;
@@ -465,3 +466,8 @@ section.main_banner_block {
     margin: 0;
     text-align: center;
 }
+
+.dn{
+    display: none;
+}
+
