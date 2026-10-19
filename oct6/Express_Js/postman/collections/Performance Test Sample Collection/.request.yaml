@@ -1,0 +1,19 @@
+$kind: http-request
+name: ""
+url: https://bored-api.appbrewery.com/random?type=busywork&participants=2
+method: GET
+queryParams:
+  - key: type
+    value: busywork
+    disabled: false
+    description: ""
+  - key: participants
+    value: "2"
+    disabled: false
+    description: ""
+auth:
+  type: basic
+  credentials:
+    username: a
+    password: a
+order: 1000
