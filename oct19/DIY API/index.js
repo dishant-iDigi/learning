@@ -34,7 +34,7 @@ app.post("/", (req, res) => {
     id: jokes.length + 1,
     jokeText: req.body.text,
     jokeType: req.body.type,
-  };
+  }; 
 
   jokes.push(newjoke);
   console.log(jokes.slice(-1));
@@ -96,7 +96,7 @@ app.post("/jokes/:id" , (req,res)=>{
   }
 })
 
-
+ 
 //8. DELETE All jokes
 
 app.post("/jokes/all",(req,res)=>{
