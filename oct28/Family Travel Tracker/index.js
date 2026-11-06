@@ -9,7 +9,7 @@ const db = new pg.Client({
   user: "postgres",
   host: "localhost",
   database: "world",
-  password: "123456",
+  password: "admin",
   port: 5432,
 });
 db.connect();
@@ -25,22 +25,38 @@ let users = [
 ];
 
 async function checkVisisted() {
-  const result = await db.query("SELECT country_code FROM visited_countries");
+  const result = await db.query(
+    "SELECT country_code FROM visited_countries JOIN users ON user_id = users.id  WHERE user_id = $1;",
+    [currentUserId]
+  );
   let countries = [];
   result.rows.forEach((country) => {
     countries.push(country.country_code);
   });
   return countries;
 }
+
+async function getCurrentUser() {
+  const result = await db.query("SELECT * FROM users");
+
+  const allUsers = result.rows;
+  return allUsers.find((selectedUser)=> selectedUser.id==currentUserId);
+
+}
+
+
 app.get("/", async (req, res) => {
   const countries = await checkVisisted();
+  const currentUserId = getCurrentUser();
   res.render("index.ejs", {
     countries: countries,
     total: countries.length,
-    users: users,
-    color: "teal",
+    users: currentUserId,
+    color: currentUserId.color,
   });
 });
+
+
 app.post("/add", async (req, res) => {
   const input = req.body["country"];
 
@@ -65,11 +81,40 @@ app.post("/add", async (req, res) => {
     console.log(err);
   }
 });
-app.post("/user", async (req, res) => {});
+app.post("/user", async (req, res) => {
+  if(req.body.add == "new"){
+   res.render("new.ejs"); 
+  } else{
+    currentUserId =req.body.user ;
+    res.redirect("/");
+  }
+});
 
 app.post("/new", async (req, res) => {
   //Hint: The RETURNING keyword can return the data that was inserted.
   //https://www.postgresql.org/docs/current/dml-returning.html
+
+  
+  try{
+    const name = req.body["name"];
+    const color = req.body["color"];
+
+    const result = await db.query(
+      "INSERT INTO users (name,color) VALUES ($1,$2) RETURNING *;",
+      [name,color]);
+
+    const id = result.rows[0].id;
+    currentUserId = id;
+
+    res.redirect("/");  
+
+   }catch(err){
+
+    console.log(err);
+    res.redirect("/");
+
+   }
+
 });
 
 app.listen(port, () => {
