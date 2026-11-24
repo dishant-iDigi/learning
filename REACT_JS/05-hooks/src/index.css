@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+.number {
+  padding: 54px 134px;
+  background-color: paleturquoise;
+  width: 400px;
+  margin: 1rem;
+  border-radius: 14px;
+  font-size: 229px;
+
+}
+
+.btn {
+  cursor: pointer;
+  padding: 2rem;
+  background-color: gray;
+  display: inline-block;
+  margin: 1rem;
+  border-radius: 14px;
+}
