@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: capitalize;
+    background-color: #B3B3B3;
+    padding: 1rem;
+    border-radius: 14px;
+}
+

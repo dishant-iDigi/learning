@@ -115,7 +115,7 @@ const App = () => {
         }
     ];
 
-    // function(ele) {} → Don't use =>.
+    // function(ele) {} .
     // (ele) => {} → Arrow function.
     // (ele) => () → Arrow function with implicit return (useful for JSX).
     return (
